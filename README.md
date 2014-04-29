@@ -1,0 +1,1 @@
+This plugin is for Cordova 3.3.0+ and is used to trigger a scan from an RFID reader in the Getac Z710 tablet device.
