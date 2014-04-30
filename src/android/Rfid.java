@@ -1,18 +1,25 @@
-package com.askaris.drops.rfid;
+package android;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CordovaInterface;
+import org.apache.cordova.CordovaWebView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class RfidPlugin extends CordovaPlugin {
+public class Rfid extends CordovaPlugin {
 
 	public static final String ACTION_SCAN_RFID_TAG = "scanRfidTag";
 	
-	public RfidPlugin() {
+	public Rfid() {
 		super();
 		System.out.println("RfidPlugin() constructor called");
+	}
+	
+	@Override
+	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
+	  super.initialize(cordova, webView);
 	}
 	
 	@Override

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.askaris.drops.rfid" version="0.1">
-  <name>Z710 Rfid</name>
+  <name>Rfid</name>
   <description>Triggers Rfid scan on Getac Z710</description>
   
-   <js-module src="www/rfid.js" name="RfidPlugin">
-    <clobbers target="rfidPlugin"/>
+   <js-module src="www/rfid.js" name="Rfid">
+    <clobbers target="rfid"/>
   </js-module>
   
    <engines>
@@ -13,13 +13,13 @@
   
    <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="RfidPlugin">
-        <param name="android-package" value="com.askaris.drops.rfid.RfidPlugin"/>
+      <feature name="Rfid">
+        <param name="android-package" value="com.askaris.drops.rfid.Rfid"/>
         <param name="onload" value="true"/>
       </feature>
     </config-file>
     
-    <source-file src="src/android/RfidPlugin.java" target-dir="src/com/askaris/drops/rfid"/>
+    <source-file src="src/android/Rfid.java" target-dir="src/com/askaris/drops/rfid"/>
     
     </platform>
 </plugin>
