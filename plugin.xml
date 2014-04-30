@@ -3,7 +3,7 @@
   <name>Z710 Rfid</name>
   <description>Triggers Rfid scan on Getac Z710</description>
   
-   <js-module src="www/android/rfid.js" name="Rfid">
+   <js-module src="www/android/rfid.js" name="RfidPlugin">
     <clobbers target="rfid"/>
   </js-module>
   
@@ -13,7 +13,7 @@
   
    <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Rfid">
+      <feature name="RfidPlugin">
         <param name="android-package" value="com.askaris.drops.rfid.RfidPlugin"/>
       </feature>
     </config-file>
