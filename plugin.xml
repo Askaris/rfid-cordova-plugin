@@ -3,7 +3,7 @@
   <name>Z710 Rfid</name>
   <description>Triggers Rfid scan on Getac Z710</description>
   
-   <js-module src="www/android/rfid.js" name="RfidPlugin">
+   <js-module src="www/rfid.js" name="RfidPlugin">
     <clobbers target="rfidPlugin"/>
   </js-module>
   

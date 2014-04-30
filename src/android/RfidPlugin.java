@@ -9,7 +9,12 @@ import org.json.JSONObject;
 public class RfidPlugin extends CordovaPlugin {
 
 	public static final String ACTION_SCAN_RFID_TAG = "scanRfidTag";
-
+	
+	public RfidPlugin() {
+		super();
+		System.out.println("RfidPlugin() constructor called");
+	}
+	
 	@Override
 	public boolean execute(String action, JSONArray args,
 			CallbackContext callbackContext) throws JSONException {
@@ -26,5 +31,13 @@ public class RfidPlugin extends CordovaPlugin {
 			callbackContext.error(e.getMessage());
 			return false;
 		}
+	}
+	
+	public void onResume(boolean multitasking) {
+		System.out.println("RfidPlugin.onResume() called");
+	}
+
+	public void onPause(boolean multitasking) {
+		System.out.println("RfidPlugin.onPause() called");
 	}
 }
