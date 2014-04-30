@@ -1,4 +1,4 @@
-package android;
+package com.askaris.drops.rfid;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
