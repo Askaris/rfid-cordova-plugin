@@ -1,4 +1,4 @@
-var rfid = {
+module.exports = {
 	scanTag : function() {
 		cordova.exec(
 				function(winParam) {},
