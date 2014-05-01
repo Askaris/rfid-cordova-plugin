@@ -19,7 +19,7 @@
       </feature>
     </config-file>
     
-    <source-file src="src/android/Rfid.java" target-dir="src/com/askaris/drops/rfid"/>
+    <source-file src="src/com/askaris/drops/rfid/Rfid.java" target-dir="src/com/askaris/drops/rfid"/>
     
     </platform>
 </plugin>
